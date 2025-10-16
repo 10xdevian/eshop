@@ -1,14 +1,17 @@
 import express from 'express';
 
-const host = process.env.HOST ?? 'localhost';
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+const port = process.env.PORT ? Number(process.env.PORT) : 6001;
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send({ 'message': 'Hello API'});
+    res.send({ 'message': 'Hello API i am auth service'});
 });
 
-app.listen(port, host, () => {
-    console.log(`[ ready ] http://${host}:${port}`);
-});
+const server = app.listen(port , ()=> {
+  console.log(`Auth server is running at http://localhost:${port}/api`)
+})
+
+server.on("error", (err)=> {
+  console.log("Server error", err)
+})
