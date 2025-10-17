@@ -7,7 +7,9 @@ const app = express();
 app.get('/', (req, res) => {
     res.send({ 'message': 'Hello API i am auth services'});
 });
-
+app.get('/api', (req, res) => {
+    res.send({ 'message': 'Hello from AUTH API!'});
+})
 const server = app.listen(port , ()=> {
   console.log(`Auth server is running at http://localhost:${port}/api`)
 })
