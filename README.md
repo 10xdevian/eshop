@@ -27,12 +27,7 @@ nx g @nx/express:app apps/app-name
 
 # Gituhub Command 
 ```
-
-<!-- add to pull from main -->
-
-<!--  add to push to the your brances -->
-
-<!-- add to merger the code to main -->
-
-
+git checkout branch-name
+git pull origin branch-name
+git push origin branch-name
 ```
