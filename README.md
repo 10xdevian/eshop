@@ -8,6 +8,11 @@
 # To start the application, run the following command:
 
 ```
+
+npm add --global nx
+
+nx init
+
 clone the repo https://github.com/10xdevian/eshop.git
 
 cd eshop
@@ -27,7 +32,10 @@ nx g @nx/express:app apps/app-name
 
 # Gituhub Command 
 ```
-git checkout branch-name
+git checkout MAINi
+git merge branch-name_That_now_added_the_code
+git push origin main
 git pull origin branch-name
 git push origin branch-name
+
 ```
