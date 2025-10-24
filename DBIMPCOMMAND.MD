@@ -1,0 +1,1 @@
+dotenv -e .env -- npx prisma generate
