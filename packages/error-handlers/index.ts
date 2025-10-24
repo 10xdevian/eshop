@@ -1,4 +1,3 @@
-import { deflate } from "zlib";
 
 export class AppError extends Error {
   public readonly statusCode: number;
