@@ -23,6 +23,8 @@ app.get('/', (req, res) => {
 
 app.use(errorMiddleware)
 
+
+
 const server = app.listen(port , ()=> {
   console.log(`Auth server is running at http://localhost:${port}/api`)
 })
